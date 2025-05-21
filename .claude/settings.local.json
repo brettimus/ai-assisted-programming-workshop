@@ -10,7 +10,8 @@
       "Bash(ls:*)",
       "Bash(pnpm format:*)",
       "Bash(pnpm check:*)",
-      "Bash(pnpm fix:*)"
+      "Bash(pnpm fix:*)",
+      "Bash(pnpm lint:*)"
     ],
     "deny": []
   }

@@ -12,10 +12,10 @@
     "start": "node dist/index.js",
     "dev": "ts-node --esm src/index.ts",
     "present": "node dist/index.js",
-    "lint": "biome lint src/",
+    "lint": "biome lint src/ --write",
     "format": "biome format src/ --write",
     "check": "biome check src/",
-    "fix": "biome check src/ --apply"
+    "fix": "biome check src/ --write"
   },
   "keywords": [
     "presentation",
