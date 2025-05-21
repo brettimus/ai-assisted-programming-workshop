@@ -16,7 +16,7 @@ export const presentation: Presentation = {
       notes: ['Welcome everyone to our workshop on AI-assisted programming'],
     },
     {
-      title: 'Why AI-Assisted Programming?',
+      title: 'What do you mean by "AI-Assisted Programming?"',
       content: [
         "• It's not vibecoding",
         '',
@@ -34,16 +34,16 @@ export const presentation: Presentation = {
       content: [
         '• Go through a few pointers',
         '',
-        '• Mies, Lau, Brett tell stories',
+        '• Mies, Lau, Brett (anyone else?) tell stories',
         '',
-        '• You ask questions along the way',
+        '• Please ask questions along the way',
       ],
       notes: ['Interactive session with real-world examples', 'Please ask questions at any point'],
     },
     {
       title: 'Pointers: Use AI a Lot',
       content: [
-        '• Practice makes perfect',
+        '• The barrier for creating new things is very low',
         '',
         '• Build intuition about capabilities and limitations',
         '',
@@ -61,7 +61,7 @@ export const presentation: Presentation = {
         '',
         '• Show patterns you want followed',
         '',
-        '• Be explicit about project conventions',
+        '• Model context has grown exponentially!!! (4k => 1M tokens)',
       ],
       notes: [
         'AI performs better with clear examples',
@@ -75,7 +75,7 @@ export const presentation: Presentation = {
         '',
         '• Cursor, Perplexity often downgrade unnecessarily',
         '',
-        '• Latest models typically have best capabilities',
+        '• Reasoning is good for planning, but needs more context',
       ],
       notes: [
         'Model quality matters significantly for complex tasks',
@@ -89,7 +89,7 @@ export const presentation: Presentation = {
         '',
         '• Re-evaluate when new models are released',
         '',
-        '• Share findings with colleagues',
+        '• Try new tools: Sometimes they unlock new capabilities',
       ],
       notes: [
         'AI capabilities evolve rapidly with new model versions',
@@ -135,7 +135,7 @@ export const presentation: Presentation = {
         '',
         '• Example: Ghostty theme switcher',
         '',
-        '• Automating repetitive tasks',
+        '• Example: Investigating AI gateway calls',
       ],
       notes: [
         'AI excels at generating utility scripts',
@@ -143,8 +143,8 @@ export const presentation: Presentation = {
       ],
     },
     {
-      title: "Brett's Workflows: Debugging",
-      content: ['• Story: HONCpiler', '', '• Error analysis', '', '• Suggesting fixes'],
+      title: "Brett's Workflows: Hypothesis-driven Debugging",
+      content: ['• Story: HONCpiler', '', '• (go to Cursor history...)'],
       notes: [
         'Share the HONCpiler debugging experience',
         'How AI helped identify and resolve the issue',
@@ -155,9 +155,9 @@ export const presentation: Presentation = {
       content: [
         '• Story: Credential management for Spectacular',
         '',
-        '• Focused, well-defined task',
+        '• Finished a feature while I went to the toilet',
         '',
-        '• Quick implementation with AI assistance',
+        '• (go to Cursor history...)',
       ],
       notes: [
         'Explain the credential management feature',
@@ -165,13 +165,13 @@ export const presentation: Presentation = {
       ],
     },
     {
-      title: "Brett's Workflows: Medium Feature",
+      title: "Brett's Workflows: Medium-sized Feature",
       content: [
         '• Story: Zip file download + R2 upload',
         '',
-        '• Clarifying implementation',
+        '• (go to Cursor history...)',
         '',
-        '• Documenting next steps in Linear',
+        '• Most work was documenting PR and next steps in Linear',
       ],
       notes: [
         'Share how AI helped implement the zip download feature',
@@ -193,7 +193,7 @@ export const presentation: Presentation = {
       ],
     },
     {
-      title: 'Surprise',
+      title: 'Surprise!',
       content: ['', '', 'This presentation was created with Claude Code', '', ''],
       notes: [
         'Reveal that this presentation itself was created using AI assistance',
