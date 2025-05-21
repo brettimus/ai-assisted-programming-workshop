@@ -14,6 +14,7 @@ export const presentation: Presentation = {
         'Press Q to quit',
       ],
       notes: ['Welcome everyone to our workshop on AI-assisted programming'],
+      isFancy: true,
     },
     {
       title: 'What do you mean by "AI-Assisted Programming?"',
@@ -199,6 +200,7 @@ export const presentation: Presentation = {
         'Reveal that this presentation itself was created using AI assistance',
         'Show how meta this whole thing is',
       ],
+      isFancy: true,
     },
     {
       title: 'Q&A',

@@ -36,6 +36,38 @@ export class Presenter {
     this.showNotes = !this.showNotes;
   }
 
+  private renderFancyTitle(title: string, terminalWidth: number): void {
+    // Use figlet to create ASCII art title
+    const figletText = figlet.textSync(title, {
+      font: 'Standard',
+      horizontalLayout: 'default',
+      verticalLayout: 'default',
+      width: Math.min(terminalWidth - 10, 100),
+    });
+
+    // Add some padding and color
+    const lines = figletText.split('\n');
+    console.log(); // Add some space above
+    for (const line of lines) {
+      console.log(chalk.cyan.bold(line));
+    }
+    console.log(); // Add some space below
+  }
+
+  private renderRegularTitle(title: string, terminalWidth: number): void {
+    // Regular boxed title
+    const titleBox = boxen(chalk.bold.cyan(title), {
+      padding: 1,
+      margin: { top: 1, bottom: 1, left: 2, right: 2 },
+      borderStyle: 'round',
+      borderColor: 'cyan',
+      width: Math.min(terminalWidth - 8, 60),
+      textAlignment: 'center',
+    });
+
+    console.log(titleBox);
+  }
+
   public renderSlide(): void {
     // Clear the console
     console.clear();
@@ -46,17 +78,12 @@ export class Presenter {
     const leftPadding = 4; // Left padding for content
     const paddingSpace = ' '.repeat(leftPadding);
 
-    // Render the title - simpler, more readable approach
-    const titleBox = boxen(chalk.bold.cyan(slide.title), {
-      padding: 1,
-      margin: { top: 1, bottom: 1, left: 2, right: 2 },
-      borderStyle: 'round',
-      borderColor: 'cyan',
-      width: Math.min(terminalWidth - 8, 60),
-      textAlignment: 'center',
-    });
-
-    console.log(titleBox);
+    // Render the title according to style preference
+    if (slide.isFancy) {
+      this.renderFancyTitle(slide.title, terminalWidth);
+    } else {
+      this.renderRegularTitle(slide.title, terminalWidth);
+    }
 
     // Add a separator
     console.log(chalk.cyan('─'.repeat(terminalWidth)));

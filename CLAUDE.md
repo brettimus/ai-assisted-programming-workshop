@@ -72,6 +72,7 @@ Each slide follows this structure:
   notes: [
     'Presenter notes to help remember talking points',
     'Will only be displayed when notes mode is active'
-  ]
+  ],
+  isFancy: true // Optional: use figlet for ASCII art title
 }
 ```

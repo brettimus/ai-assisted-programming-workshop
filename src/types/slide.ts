@@ -2,6 +2,7 @@ export interface Slide {
   title: string;
   content: string[];
   notes?: string[];
+  isFancy?: boolean;
 }
 
 export interface Presentation {
