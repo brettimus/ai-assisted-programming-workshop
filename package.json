@@ -34,6 +34,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "boxen": "^8.0.1",
     "chalk": "4",
     "commander": "^14.0.0",
     "figlet": "1",

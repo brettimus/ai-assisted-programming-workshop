@@ -1,3 +1,4 @@
+import boxen from 'boxen';
 import chalk from 'chalk';
 import figlet from 'figlet';
 import type { Presentation, Slide } from './types/slide.js';
@@ -40,31 +41,36 @@ export class Presenter {
     console.clear();
 
     const slide = this.getCurrentSlide();
+    const terminalWidth = process.stdout.columns || 80;
+    const contentWidth = Math.min(terminalWidth - 10, 80); // Content area width
+    const leftPadding = 4; // Left padding for content
+    const paddingSpace = ' '.repeat(leftPadding);
 
-    // Render the title with figlet
-    console.log(
-      chalk.cyan(
-        figlet.textSync(slide.title, {
-          font: 'Standard',
-          horizontalLayout: 'fitted',
-          verticalLayout: 'default',
-          width: 80,
-          whitespaceBreak: true,
-        })
-      )
-    );
+    // Render the title - simpler, more readable approach
+    const titleBox = boxen(chalk.bold.cyan(slide.title), {
+      padding: 1,
+      margin: { top: 1, bottom: 1, left: 2, right: 2 },
+      borderStyle: 'round',
+      borderColor: 'cyan',
+      width: Math.min(terminalWidth - 8, 60),
+      textAlignment: 'center',
+    });
+
+    console.log(titleBox);
 
     // Add a separator
-    console.log(chalk.cyan('─'.repeat(process.stdout.columns || 80)));
+    console.log(chalk.cyan('─'.repeat(terminalWidth)));
+    console.log(); // Add vertical spacing
 
-    // Render the content
+    // Render the content with left padding
     for (const line of slide.content) {
-      console.log(chalk.white(line));
+      console.log(paddingSpace + chalk.white(line));
     }
 
+    console.log(); // Add vertical spacing
+
     // Add a separator
-    console.log('\n');
-    console.log(chalk.cyan('─'.repeat(process.stdout.columns || 80)));
+    console.log(chalk.cyan('─'.repeat(terminalWidth)));
 
     // Show slide number
     console.log(
@@ -75,7 +81,7 @@ export class Presenter {
     if (this.showNotes && slide.notes) {
       console.log(chalk.yellow('\nPresenter Notes:'));
       for (const note of slide.notes) {
-        console.log(chalk.yellow(`• ${note}`));
+        console.log(chalk.yellow(`${paddingSpace}• ${note}`));
       }
     }
   }

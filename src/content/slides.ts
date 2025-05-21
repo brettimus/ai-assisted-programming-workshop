@@ -13,26 +13,24 @@ export const presentation: Presentation = {
         'Press ← to go back',
         'Press Q to quit',
       ],
-      notes: [
-        'Welcome everyone to our workshop on AI-assisted programming',
-      ],
+      notes: ['Welcome everyone to our workshop on AI-assisted programming'],
     },
     {
       title: 'Why AI-Assisted Programming?',
       content: [
-        '• It\'s not vibecoding',
+        "• It's not vibecoding",
         '',
         '• Using AI as an assistant for specific tasks',
         '',
         '• You remain firmly in the loop',
       ],
       notes: [
-        'Important distinction: We\'re not just vibing with AI',
+        "Important distinction: We're not just vibing with AI",
         'This is purposeful collaboration where you maintain control',
       ],
     },
     {
-      title: 'Today\'s Agenda',
+      title: "Today's Agenda",
       content: [
         '• Go through a few pointers',
         '',
@@ -40,10 +38,7 @@ export const presentation: Presentation = {
         '',
         '• You ask questions along the way',
       ],
-      notes: [
-        'Interactive session with real-world examples',
-        'Please ask questions at any point',
-      ],
+      notes: ['Interactive session with real-world examples', 'Please ask questions at any point'],
     },
     {
       title: 'Pointers: Use AI a Lot',
@@ -56,7 +51,7 @@ export const presentation: Presentation = {
       ],
       notes: [
         'The more you use AI, the better you get at working with it',
-        'You\'ll learn what tasks it excels at and where it struggles',
+        "You'll learn what tasks it excels at and where it struggles",
       ],
     },
     {
@@ -70,13 +65,13 @@ export const presentation: Presentation = {
       ],
       notes: [
         'AI performs better with clear examples',
-        'Show don\'t tell - provide existing code as reference',
+        "Show don't tell - provide existing code as reference",
       ],
     },
     {
       title: 'Pointers: Use a Powerful Model',
       content: [
-        '• Don\'t trust autoselection of models',
+        "• Don't trust autoselection of models",
         '',
         '• Cursor, Perplexity often downgrade unnecessarily',
         '',
@@ -90,7 +85,7 @@ export const presentation: Presentation = {
     {
       title: 'Pointers: Track Capabilities',
       content: [
-        '• Keep track of what it\'s good at',
+        "• Keep track of what it's good at",
         '',
         '• Re-evaluate when new models are released',
         '',
@@ -116,49 +111,25 @@ export const presentation: Presentation = {
       ],
     },
     {
-      title: 'Lau\'s Workflows',
-      content: [
-        '...',
-        '',
-        '',
-        '',
-        '(Hand over to Lau)',
-      ],
-      notes: [
-        'Introduce Lau',
-        'Transition to their examples and stories',
-      ],
+      title: "Lau's Workflows",
+      content: ['...', '', '', '', '(Hand over to Lau)'],
+      notes: ['Introduce Lau', 'Transition to their examples and stories'],
     },
     {
-      title: 'Mies\' Workflows',
-      content: [
-        '...',
-        '',
-        '',
-        '',
-        '(Hand over to Mies)',
-      ],
-      notes: [
-        'Introduce Mies',
-        'Transition to their examples and stories',
-      ],
+      title: "Mies' Workflows",
+      content: ['...', '', '', '', '(Hand over to Mies)'],
+      notes: ['Introduce Mies', 'Transition to their examples and stories'],
     },
     {
-      title: 'Brett\'s Workflows: Review',
-      content: [
-        '• Blog posts',
-        '',
-        '• Documentation',
-        '',
-        '• Pull requests',
-      ],
+      title: "Brett's Workflows: Review",
+      content: ['• Blog posts', '', '• Documentation', '', '• Pull requests'],
       notes: [
         'AI can help with reviewing and improving written content',
         'Examples of how I use AI for editing and feedback',
       ],
     },
     {
-      title: 'Brett\'s Workflows: Scripts',
+      title: "Brett's Workflows: Scripts",
       content: [
         '• Example: filetree generator',
         '',
@@ -172,21 +143,15 @@ export const presentation: Presentation = {
       ],
     },
     {
-      title: 'Brett\'s Workflows: Debugging',
-      content: [
-        '• Story: HONCpiler',
-        '',
-        '• Error analysis',
-        '',
-        '• Suggesting fixes',
-      ],
+      title: "Brett's Workflows: Debugging",
+      content: ['• Story: HONCpiler', '', '• Error analysis', '', '• Suggesting fixes'],
       notes: [
         'Share the HONCpiler debugging experience',
         'How AI helped identify and resolve the issue',
       ],
     },
     {
-      title: 'Brett\'s Workflows: Small Feature',
+      title: "Brett's Workflows: Small Feature",
       content: [
         '• Story: Credential management for Spectacular',
         '',
@@ -200,7 +165,7 @@ export const presentation: Presentation = {
       ],
     },
     {
-      title: 'Brett\'s Workflows: Medium Feature',
+      title: "Brett's Workflows: Medium Feature",
       content: [
         '• Story: Zip file download + R2 upload',
         '',
@@ -214,7 +179,7 @@ export const presentation: Presentation = {
       ],
     },
     {
-      title: 'Brett\'s Workflows: Larger Feature',
+      title: "Brett's Workflows: Larger Feature",
       content: [
         '• Story: Deployments',
         '',
@@ -229,13 +194,7 @@ export const presentation: Presentation = {
     },
     {
       title: 'Surprise',
-      content: [
-        '',
-        '',
-        'This presentation was created with Claude Code',
-        '',
-        '',
-      ],
+      content: ['', '', 'This presentation was created with Claude Code', '', ''],
       notes: [
         'Reveal that this presentation itself was created using AI assistance',
         'Show how meta this whole thing is',
@@ -243,13 +202,7 @@ export const presentation: Presentation = {
     },
     {
       title: 'Q&A',
-      content: [
-        '',
-        '',
-        'Questions?',
-        '',
-        '',
-      ],
+      content: ['', '', 'Questions?', '', ''],
       notes: [
         'Open the floor for questions',
         'Encourage sharing of personal AI workflow experiences',
